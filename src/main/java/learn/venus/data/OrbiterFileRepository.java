@@ -39,7 +39,7 @@ public class OrbiterFileRepository {
         } catch (IOException ex) {
             //do nothing
         }
-        System.out.println("result"+result);
+
         return result;
     }
 

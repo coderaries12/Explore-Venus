@@ -5,6 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="339d14e4-abac-4ab8-b3ef-bbf9a5e2a193" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/learn/venus/data/OrbiterFileRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/learn/venus/data/OrbiterFileRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/learn/venus/data/OrbiterFileRepositoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/learn/venus/data/OrbiterFileRepositoryTest.java" afterDir="false" />
     </list>
@@ -53,6 +54,44 @@
     <key name="CreateTestDialog.RecentsKey">
       <recent name="learn.venus.data" />
     </key>
+  </component>
+  <component name="RunManager" selected="JUnit.learn.venus.data in explore-venus">
+    <configuration name="OrbiterFileRepositoryTest.shouldFindOneOfEachType" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="explore-venus" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="learn.venus.data.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="learn.venus.data" />
+      <option name="MAIN_CLASS_NAME" value="learn.venus.data.OrbiterFileRepositoryTest" />
+      <option name="METHOD_NAME" value="shouldFindOneOfEachType" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="learn.venus.data in explore-venus" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="explore-venus" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="learn.venus.data.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="learn.venus.data" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.learn.venus.data in explore-venus" />
+        <item itemvalue="JUnit.OrbiterFileRepositoryTest.shouldFindOneOfEachType" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
