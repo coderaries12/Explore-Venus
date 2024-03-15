@@ -39,7 +39,26 @@ public class OrbiterFileRepository {
         } catch (IOException ex) {
             //do nothing
         }
-        System.out.println("result"+result);
+
         return result;
+    }
+
+    public Orbiter findById(int orbiterId){
+        for(Orbiter orbiter:findAll()){
+            if(orbiter.getOrbiterId() == orbiterId){
+                return orbiter;
+            }
+        }
+        return null;
+    }
+
+    public List<Orbiter> findByType(OrbiterType type){
+        ArrayList<Orbiter> result = new ArrayList<>();
+        for(Orbiter orbiter:findAll()){
+            if(orbiter.getType() == type){
+                result.add(orbiter);
+            }
+        }
+        return  result;
     }
 }
