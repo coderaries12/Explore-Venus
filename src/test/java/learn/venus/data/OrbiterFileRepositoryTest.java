@@ -18,6 +18,18 @@ public class OrbiterFileRepositoryTest {
 
     }
 
+    @Test
+    public void shouldFindExistingOrbiter(){
+        Orbiter celestyn = repository.findById(4);
+        assertNotNull(celestyn);
+        assertEquals("Celestyn Kamien",celestyn.getName());
+    }
+    @Test
+    public void shouldNotFindExistingOrbiter(){
+        Orbiter nope = repository.findById(1000);
+        assertNull(nope);
+    }
+
 
 
 }

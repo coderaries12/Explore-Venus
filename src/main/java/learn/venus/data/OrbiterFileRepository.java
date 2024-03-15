@@ -42,4 +42,13 @@ public class OrbiterFileRepository {
         System.out.println("result"+result);
         return result;
     }
+
+    public Orbiter findById(int orbiterId){
+        for(Orbiter orbiter:findAll()){
+            if(orbiter.getOrbiterId() == orbiterId){
+                return orbiter;
+            }
+        }
+        return null;
+    }
 }
