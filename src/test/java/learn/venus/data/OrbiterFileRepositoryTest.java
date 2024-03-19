@@ -54,8 +54,19 @@ public class OrbiterFileRepositoryTest {
         List<Orbiter> venusians = repository.findByType(OrbiterType.VENUSIAN);
         assertNotNull(venusians);
         assertEquals(1,venusians.size());
+    }
 
+    @Test
+    public void shouldAddOrbiter(){
+        Orbiter orbiter = new Orbiter();
+        orbiter.setType(OrbiterType.MODULE);
+        orbiter.setName("Test Module");
+        orbiter.setSponsor("Test Sponsor");
 
+        Orbiter actual  = repository.add(orbiter);
+
+        assertNotNull(actual);
+        assertEquals(6,actual.getOrbiterId());
 
     }
 

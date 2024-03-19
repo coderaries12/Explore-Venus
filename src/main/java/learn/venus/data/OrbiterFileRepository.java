@@ -61,4 +61,16 @@ public class OrbiterFileRepository {
         }
         return  result;
     }
+
+    public Orbiter add(Orbiter orbiter){
+        return null;
+    }
+
+    public boolean update(Orbiter orbiter){
+        return false;
+    }
+
+    public boolean deleteById(int orbiterId){
+        return false;
+    }
 }
