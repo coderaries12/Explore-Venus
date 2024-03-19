@@ -59,7 +59,7 @@ public class OrbiterFileRepository {
         return  result;
     }
 
-    public Orbiter add(Orbiter orbiter){
+    public Orbiter add(Orbiter orbiter) throws DataAccessException {
         List<Orbiter> all = findAll();
         int nextId=0;
         for(Orbiter o:all){
@@ -81,7 +81,7 @@ public class OrbiterFileRepository {
         return false;
     }
 
-    private  void writeAll(List<Orbiter> orbiters){
+    private  void writeAll(List<Orbiter> orbiters) throws DataAccessException {
         try(PrintWriter writer = new PrintWriter(filePath)){
             writer.println("orbiterId,name,type,sponsor");//print header
             for(Orbiter o:orbiters){
@@ -89,7 +89,7 @@ public class OrbiterFileRepository {
             }
 
         }catch(IOException ex){
-            //
+            throw new DataAccessException(ex.getMessage(),ex);
         }
     }
 
