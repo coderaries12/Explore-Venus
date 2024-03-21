@@ -71,6 +71,8 @@ public class OrbiterFileRepository {
         all.add(orbiter);
         writeAll(all);
 
+        return orbiter;
+
     }
 
     public boolean update(Orbiter orbiter){
@@ -93,8 +95,8 @@ public class OrbiterFileRepository {
         }
     }
 
-    private  String serialize(Orbiter orbiter){
-        return String.format("%s, %s, %s, %s",
+    private String serialize(Orbiter orbiter){
+        return String.format("%s,%s,%s,%s",
                 orbiter.getOrbiterId(),
                 orbiter.getName(),
                 orbiter.getType(),

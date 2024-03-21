@@ -6,6 +6,5 @@ public enum OrbiterType {
     SHUTTLE,
     ASTRONAUT,
     VENUSIAN
-
 }
 

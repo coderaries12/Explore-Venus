@@ -5,7 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="339d14e4-abac-4ab8-b3ef-bbf9a5e2a193" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/orbiters.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/orbiters.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/learn/venus/data/OrbiterFileRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/learn/venus/data/OrbiterFileRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/learn/venus/models/OrbiterType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/learn/venus/models/OrbiterType.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/learn/venus/data/OrbiterFileRepositoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/learn/venus/data/OrbiterFileRepositoryTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -17,8 +20,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Enum" />
-        <option value="Class" />
         <option value="JUnit5 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -37,7 +40,8 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "JUnit.OrbiterFileRepositoryTest.executor": "Run",
-    "JUnit.OrbiterFileRepositoryTest.shouldFindOneOfEachType.executor": "Run",
+    "JUnit.OrbiterFileRepositoryTest.shouldAddOrbiter.executor": "Run",
+    "JUnit.OrbiterFileRepositoryTest.shouldFindOneOfEachType.executor": "Debug",
     "JUnit.learn.venus.data in explore-venus.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -56,7 +60,7 @@
       <recent name="learn.venus.data" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.OrbiterFileRepositoryTest">
+  <component name="RunManager" selected="JUnit.OrbiterFileRepositoryTest.shouldAddOrbiter">
     <configuration name="OrbiterFileRepositoryTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="explore-venus" />
       <extension name="coverage">
@@ -68,6 +72,22 @@
       <option name="PACKAGE_NAME" value="learn.venus.data" />
       <option name="MAIN_CLASS_NAME" value="learn.venus.data.OrbiterFileRepositoryTest" />
       <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="OrbiterFileRepositoryTest.shouldAddOrbiter" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="explore-venus" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="learn.venus.data.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="learn.venus.data" />
+      <option name="MAIN_CLASS_NAME" value="learn.venus.data.OrbiterFileRepositoryTest" />
+      <option name="METHOD_NAME" value="shouldAddOrbiter" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -104,9 +124,10 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.OrbiterFileRepositoryTest.shouldAddOrbiter" />
         <item itemvalue="JUnit.OrbiterFileRepositoryTest" />
-        <item itemvalue="JUnit.learn.venus.data in explore-venus" />
         <item itemvalue="JUnit.OrbiterFileRepositoryTest.shouldFindOneOfEachType" />
+        <item itemvalue="JUnit.learn.venus.data in explore-venus" />
       </list>
     </recent_temporary>
   </component>

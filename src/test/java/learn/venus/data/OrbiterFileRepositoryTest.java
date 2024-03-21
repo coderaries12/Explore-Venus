@@ -3,12 +3,31 @@ package learn.venus.data;
 import learn.venus.models.OrbiterType;
 import org.junit.Test;
 import learn.venus.models.Orbiter;
+import org.junit.jupiter.api.BeforeEach;
+
+import javax.imageio.IIOException;
 
 import static org.junit.jupiter.api.Assertions.*;
+
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Paths;
+import java.nio.file.StandardCopyOption;
 import java.util.List;
 
 public class OrbiterFileRepositoryTest {
-    private final OrbiterFileRepository repository = new OrbiterFileRepository("./data/orbiters.csv");
+
+    private static final String SEED_PATH = "./data/orbiters-seed.csv";
+    private static final String TEST_PATH = "./data/orbiters-test.csv";
+    private final OrbiterFileRepository repository = new OrbiterFileRepository(TEST_PATH);
+
+    @BeforeEach
+    void setup() throws IOException {
+        Files.copy(
+                Paths.get(SEED_PATH),
+                Paths.get(TEST_PATH),
+                StandardCopyOption.REPLACE_EXISTING);
+    }
 
     @Test
     public void shouldFindFiveOrbiters(){
@@ -57,19 +76,17 @@ public class OrbiterFileRepositoryTest {
     }
 
     @Test
-    public void shouldAddOrbiter(){
+    public void shouldAddOrbiter() throws DataAccessException {
         Orbiter orbiter = new Orbiter();
         orbiter.setType(OrbiterType.MODULE);
         orbiter.setName("Test Module");
         orbiter.setSponsor("Test Sponsor");
 
-        Orbiter actual  = repository.add(orbiter);
+        Orbiter actual = repository.add(orbiter);
 
         assertNotNull(actual);
         assertEquals(6,actual.getOrbiterId());
 
     }
-
-
 
 }
